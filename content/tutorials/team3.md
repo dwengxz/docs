@@ -117,26 +117,26 @@ This tutorial also utilizes the resistor labels on the 2.42" OLED Display Module
   
 ### Instructional
 
-##Step 1: Disconnect the bracket holding the display cable.
+## Step 1: Disconnect the bracket holding the display cable.
 
 Gently pull back on the black tab holding the display cable to its white connector until you hear a click. Once it clicks, you will be able to disconnect the display cable and safely adjust the resistor pads below. 
 ![Figure5](Team3Photos/BACK.jpg)
 ![Figure6](Team3Photos/BRACKETMOVED.jpg)
 *Disconnecting the bracket on Design A*
 
-##Step 2: Desolder R8 and Soldering R9
+## Step 2: Desolder R8 and Soldering R9
 Using your soldering iron and solder wick, gently desolder the resistor at R8 off of the board. This resistor will need to be then soldered to R9. 
 
 Warning! Be careful when heating the solder pads of the OLED module. When using too much heat, these pads can easily be melted or ripped off of the board. 
 
-##Step 3: Soldering R10, R11, and R12
+## Step 3: Soldering R10, R11, and R12
 These pads do not need a specific resistor to be soldered to them and can be simply shorted across. For one set of resistor pads, use your soldering iron and some solder to create a connection between them. Repeat this for each resistor pad set. 
 
 When you are done, your result should look like the example in Figure 7. 
 ![Figure6](Team3Photos/RESOLDERED.jpg)
 *Figure 7*
 
-##Step 4: Reconnect the Display Cable
+## Step 4: Reconnect the Display Cable
 With everything soldered, it is time to reassemble the board. Simply reconnect the display cable to its connector, and push the black bracket back into place until you hear a click. 
 
 With this, you have successfully reconfigured your 2.42" OLED module for I2C communication! 
@@ -161,7 +161,7 @@ This is a quick introduction to coding your OLED module using the Arduino IDE an
 - USB cable
   
 ### Instructional
-##Step 1: Connecting the OLED module to the ESP32
+## Step 1: Connecting the OLED module to the ESP32
 Now that your module is successfully set up in I2C mode, it can now be connected to your ESP32 via 4 pins: VCC, GND, SDA, and SCL. 
 These pins should connect from your OLED to your ESP32 as follows:
 VCC -> 3V3
@@ -171,12 +171,12 @@ SCL -> GPIO22
 
 Your ESP32 can now be connected to your computer, and your 2.42" OLED display module is now ready to be coded! 
 
-###Example
+### Example
 
 ##Introduction
 Now that our esp32 is connected to the OLED, here is a small program to display some text. 
 
-##Code:
+## Code:
 ```
 #include <SPI.h>
 #include <Wire.h>
