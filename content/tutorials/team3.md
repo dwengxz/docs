@@ -173,7 +173,7 @@ Your ESP32 can now be connected to your computer, and your 2.42" OLED display mo
 
 ### Example
 
-##Introduction
+## Introduction
 Now that our esp32 is connected to the OLED, here is a small program to display some text. 
 
 ## Code:
